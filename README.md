@@ -1,10 +1,10 @@
 # portfolio
 
 구성
-1. Head
-2. Title
-3. Contact
-4. Skill list
+1. Head - 각각의 페이지로 이동(nav 사용>
+2. Title - 이름, 생년월일, 사진
+3. Contact  - e-mail, 전화번호 기재
+4. Skill list - 사용가능 스킬들 아이콘으로 표시
 5. Archive (깃 주소 첨부)
 6. 각 프로젝트 별 설명 (4개)
 각 프로젝트는 총 3~4 줄로 요약하여 정리하여 업로드 한다.
