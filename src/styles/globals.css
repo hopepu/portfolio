@@ -5,8 +5,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
     padding: 1rem;
 }
 
@@ -22,7 +22,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: rgba(0, 45, 253, 0.82);
     text-decoration: none;
     font-weight: 600;
 }

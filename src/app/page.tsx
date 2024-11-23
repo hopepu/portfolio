@@ -1,10 +1,31 @@
 import React from "react";
+import About from "@/app/about/page";
+import Career from "@/app/career/page";
+import Project from "@/app/project/page";
+import Skill from "@/app/skill/page";
+import Title from "@/app/title/page";
 
 export default function Home() {
     return (
         <div>
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is the homepage of my portfolio.</p>
+            <div>
+                <Title/>
+            </div>
+            <div>
+                <About/>
+            </div>
+            <div>
+                <Skill/>
+            </div>
+
+            <div>
+                <Career/>
+            </div>
+            <div>
+                <Project/>
+            </div>
+
+
         </div>
     );
 }
