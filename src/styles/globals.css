@@ -5,6 +5,13 @@ body {
     padding: 24px 80px ;
 }
 
+.skill_list_img{
+    border:2px solid black;
+    border-Radius:30%;
+    overflow: hidden;
+
+}
+
 header {
     background-color: #ffffff;
     color: rgb(255, 255, 255);

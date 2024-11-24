@@ -1,4 +1,3 @@
-import React from "react";
 import About from "@/app/about/page";
 import Career from "@/app/career/page";
 import Project from "@/app/project/page";
@@ -8,24 +7,22 @@ import Title from "@/app/title/page";
 export default function Home() {
     return (
         <div>
-            <div>
+            <div id="title">
                 <Title/>
             </div>
-            <div>
+            <div id="about">
                 <About/>
             </div>
-            <div>
+            <div id="skill">
                 <Skill/>
             </div>
 
-            <div>
+            <div id="career">
                 <Career/>
             </div>
-            <div>
+            <div id="project">
                 <Project/>
             </div>
-
-
         </div>
     );
 }

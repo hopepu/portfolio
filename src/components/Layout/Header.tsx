@@ -1,50 +1,79 @@
+'use client';
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from 'react';
+import styles from '../../styles/Header.module.css'; // CSS 모듈 임포트
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Header = () => {
+    const [isMenuOpen, setMenuOpen] = useState(false);
 
-return(
-<header>
-    <nav>
-        <ul>
-            <li>
-                <Link href="/">
-                    <Image
-                        width={30}
-                        height={30} // 로고의 height 값
-                        style={{
-                            borderRadius: "50%", // 원형으로 만들기 위한 스타일
-                            objectFit: "cover",  // 이미지가 원형 안에 적절히 맞춰지도록
-                        }}
-                        src="/Logo.jpg" alt="Logo"/>
-                </Link>
-            </li>
+    return (
+        <header>
+            <div className={styles.headerContainer}>
+                <div className={styles.logoContainer}>
+                    <Link href="/">
+                        <Image
+                            width={70}
+                            height={70}
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                borderRadius: '50%',
+                                objectFit: 'cover',
+                            }}
+                            layout="intrinsic"
+                            src="/image/characterLogo.jpg" alt="Logo"
+                        />
+                    </Link>
+                </div>
 
-            <li>
-                <Link href="/"> Home </Link>
-            </li>
+                <nav>
+                    <button
+                        className={styles.hamburgerButton}
+                        onClick={() => setMenuOpen(!isMenuOpen)}
+                    >
+                        ☰
+                    </button>
 
-            <li>
-                <Link href="/about"> About me </Link>
-            </li>
+                    {/* 데스크탑 메뉴 */}
+                    <ul className={styles.desktopMenu}>
+                        <li>
+                            <AnchorLink href="#about" className={styles.menuLink}>About me</AnchorLink>
+                        </li>
+                        <li>
+                            <AnchorLink href="#skill" className={styles.menuLink}>Skills</AnchorLink>
+                        </li>
+                        <li>
+                            <AnchorLink href="#career" className={styles.menuLink}>Career</AnchorLink>
+                        </li>
+                        <li>
+                            <AnchorLink href="#project" className={styles.menuLink}>Projects</AnchorLink>
+                        </li>
+                    </ul>
 
-            <li>
-                <Link href="/skill"> Skills </Link>
-            </li>
-
-            <li>
-                <Link href="/career"> Career </Link>
-            </li>
-
-            <li>
-                <Link href="/project"> Projects </Link>
-            </li>
-
-
-
-        </ul>
-    </nav>
-</header>
-);};
+                    {/* 모바일 메뉴 */}
+                    <ul className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ''}`}>
+                        <li>
+                            <AnchorLink href="#about" className={styles.menuLink}>About me</AnchorLink>
+                        </li>
+                        <li>
+                            <AnchorLink href="#skill" className={styles.menuLink}>Skills</AnchorLink>
+                        </li>
+                        <li>
+                            <AnchorLink href="#career" className={styles.menuLink}>Career</AnchorLink>
+                        </li>
+                        <li>
+                            <AnchorLink href="#project" className={styles.menuLink}>Projects</AnchorLink>
+                        </li>
+                        <li onClick={() => setMenuOpen(false)} className={styles.menuLink}>
+                            Close
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    );
+};
 
 export default Header;

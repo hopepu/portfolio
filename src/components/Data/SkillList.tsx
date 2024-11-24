@@ -1,33 +1,100 @@
+import Image from "next/image";
 
 const SkillList = () => {
     return(
-        <div>
-            <div>JAVA</div>
-            <div>JSP</div>
-            <div>Spring Framework</div>
-            <div>Spring Boot</div>
-            <div>React</div>
-            <div>Oracle DB</div>
-            <div>Maria DB</div>
-            <div>JPA</div>
-            <div>Eclipse</div>
-            <div>IntelliJ</div>
-            <div>GitHub</div>
-            <div>
-                <h2>React</h2>
-                <h2>Spring Boot</h2>
-                <h2>Oracle DB</h2>
-                <h2>Maria DB</h2>
-                <h3>JPA</h3>
-                <h4>Spring Framework</h4>
-                <h4>JSP</h4>
-                <h4>JAVA</h4>
+        <div >
+            <div className="container" style={{justifyContent: "space-between", display: "flex", border: "50px", borderColor:"black"}}>
+                <div className="skill_list_img">
+                    <Image className="skill_list_main"
+                        width={100}
+                        height={100}
+                        src="/image/react.png" alt="java"
+                        style={{objectFit: "contain", borderRadius: "10%"}}/>
+                </div>
 
-                <h4>Eclipse</h4>
-                <h4>IntelliJ</h4>
-                <h4>GitHub</h4>
+                <div className="skill_list_img">
+                    <Image
+                    width={100}
+                    height={100}
+                    src="/image/spring_boot.png" alt="java"
+                    style={{objectFit: "contain", borderRadius: "10%"}}/>
+                </div>
+
+                <div className="skill_list_img">
+                    <Image
+                    width={100}
+                    height={100}
+                    src="/image/spring.png" alt="java"
+                    style={{objectFit: "contain", borderRadius: "10%"}}/>
+                </div>
+
+                <div className="skill_list_img">
+                    <Image
+                    width={100}
+                    height={100}
+                    src="/image/oracleDB.png" alt="java"
+                    style={{objectFit: "contain", borderRadius: "10%"}}/>
+                </div>
+
+                <div className="skill_list_img">
+                    <Image
+                    width={100}
+                    height={100}
+                    src="/image/mariaDB.png" alt="java"
+                    style={{objectFit: "contain", borderRadius: "10%"}}/>
+                </div>
 
             </div>
+            <div className="container" style={{justifyContent: "space-between", display: "flex", border: "50px"}}>
+                <div className="skill_list_img">
+                    <Image
+                    width={80}
+                    height={100}
+                    src="/image/java.png" alt="java"
+                    style={{objectFit: "contain", borderRadius: "10%"}}/>
+                </div>
+                <div className="skill_list_img">
+                    <Image
+                    width={80}
+                    height={100}
+                    src="/image/jsp.png" alt="java"
+                    style={{objectFit: "contain", borderRadius: "10%"}}/>
+                </div>
+
+
+                <div className="skill_list_img">
+                    <Image
+                    width={80}
+                    height={100}
+                    src="/image/jpa.png" alt="java"
+                    style={{objectFit: "contain", borderRadius: "10%"}}/>
+                </div>
+                <div className="skill_list_img">
+                    <Image
+                    width={80}
+                    height={100}
+                    src="/image/eclipse.png" alt="java"
+                    style={{objectFit: "contain", borderRadius: "10%"}}/>
+                </div>
+                <div className="skill_list_img">
+                    <Image
+                    width={80}
+                    height={100}
+                    src="/image/intelliJ.png" alt="java"
+                    style={{
+                        objectFit: "contain", borderRadius: "10%"}}/>
+                </div>
+                <div className="skill_list_img">
+                    <Image
+                    width={80}
+                    height={100}
+                    src="/image/github2.png" alt="java"
+                    style={{objectFit: "contain", borderRadius: "10%"}}/>
+                </div>
+
+            </div>
+
+
         </div>
     )
 }
