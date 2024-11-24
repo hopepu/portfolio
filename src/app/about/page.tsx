@@ -1,10 +1,14 @@
 import React from "react";
+import IntroduceSelf from "@/components/Page/IntroduceSelf";
 
 export default function About() {
     return (
         <div>
-            <h1>About Me</h1>
-            <p>This is the About page where I introduce myself.</p>
+            <div>
+                <h1> 자기 소개 </h1>
+                <IntroduceSelf/>
+            </div>
+
         </div>
     );
 }

@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import localFont from "next/font/local";
 import "../styles/globals.css";  // styles 폴더의 globals.css 임포트
 import Head from "next/head";
-import Link from "next/link";
+import Header from "@/components/Layout/Header";
 
 // 폰트 설정
 const geistSans = localFont({
@@ -10,6 +10,12 @@ const geistSans = localFont({
     variable: "--font-geist-sans",
     weight: "100 900",
 });
+
+const SBAggroB = localFont({
+    src:"/fonts/SBAggroB.woff",
+    variable: "--font-SBAggroB",
+    weight: "100 900",
+})
 
 const geistMono = localFont({
     src: "/fonts/GeistMonoVF.woff",  // 마찬가지로 절대 경로로 설정
@@ -32,35 +38,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <title>{metadata.title}</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <body className={`${SBAggroB.variable} ${geistMono.variable} antialiased`}>
         {/* 헤더, 푸터 등 공통 레이아웃 적용 */}
         <header>
-            <nav>
-                <ul>
-                    <li>
-                        <Link href="/"> Home </Link>
-                    </li>
-
-                    <li>
-                        <Link href="/about"> About me </Link>
-                    </li>
-
-                    <li>
-                        <Link href="/skill"> Skills </Link>
-                    </li>
-
-                    <li>
-                        <Link href="/career"> Career </Link>
-                    </li>
-
-                    <li>
-                        <Link href="/project"> Projects </Link>
-                    </li>
-
-
-                </ul>
-            </nav>
+            <Header/>
         </header>
+
 
         {/* 자식 페이지 내용 */}
         <main>{children}</main>
