@@ -1,21 +1,67 @@
 /* styles/globals.css */
-
 body {
     font-family: 'SBAggroB', sans-serif;
-    padding: 24px 80px ;
+
 }
 
+.main{
+    padding: 24px 80px ;
+    margin-top: 80px ;
+}
 .skill_list_img{
     border:2px solid black;
     border-Radius:30%;
     overflow: hidden;
+    height: 100px;
+    width: 100px;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+
+}
+.education_box{
+    justify-content: space-between;
+    display: flex;
+    border: 50px;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('/fonts/nanum_gothic/NanumGothic.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* 로딩이 완료되면 폰트를 교체 */
+}
+
+@font-face {
+    font-family: 'NanumGothicBold';
+    src: url('/fonts/nanum_gothic/NanumGothicBold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* 로딩이 완료되면 폰트를 교체 */
+}
+
+
+.intro{
+    font-family: 'NanumGothic',sans-serif;
+    font-size: 18px;
+    line-height: 28px;
 
 }
 
 header {
-    background-color: #ffffff;
-    color: rgb(255, 255, 255);
-    padding: 1rem;
+    position: fixed;      /* 스크롤을 따라 헤더 고정 */
+    top: 0;               /* 화면 상단에 고정 */
+    left: 0;              /* 화면 왼쪽 끝에 고정 */
+    width: 100%;          /* 전체 화면 너비 */
+    background-color: white; /* 배경색 */
+    z-index: 1000;        /* 다른 요소들보다 위에 위치 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 */
+    padding: 10px 20px;   /* 내부 여백 */
+    transition: top 0.3s; /* 스크롤에 따라 부드럽게 움직이는 효과 */
 }
 
 nav ul {
@@ -43,6 +89,13 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
+    width: 100%;
     padding: 1rem;
     margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+html {
+    padding: 0;
+
 }

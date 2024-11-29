@@ -32,11 +32,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en">
         <Head>
-            <meta charSet="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="description" content={metadata.description ?? "Default Description"} />
+            <meta charSet="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <meta name="description" content={metadata.description ?? "Default Description"}/>
             <title>{metadata.title}</title>
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/favicon.ico"/>
         </Head>
         <body className={`${SBAggroB.variable} ${geistMono.variable} antialiased`}>
         {/* 헤더, 푸터 등 공통 레이아웃 적용 */}
@@ -46,12 +46,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
 
         {/* 자식 페이지 내용 */}
-        <main>{children}</main>
+        <main className={"main"}>{children}</main>
 
         <footer>
             <p>&copy; 2024 Portfolio Cho Yong Jae</p>
         </footer>
+
         </body>
+
         </html>
     );
 }

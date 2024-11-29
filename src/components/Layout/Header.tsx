@@ -11,11 +11,11 @@ const Header = () => {
     return (
         <header>
             <div className={styles.headerContainer}>
-                <div className={styles.logoContainer}>
+                <div className={styles.logoContainer} style={{marginLeft: '60px'}}>
                     <Link href="/">
                         <Image
-                            width={70}
-                            height={70}
+                            width={40}
+                            height={40}
                             style={{
                                 width: '100%',
                                 height: '100%',
@@ -28,7 +28,7 @@ const Header = () => {
                     </Link>
                 </div>
 
-                <nav>
+                <nav style={{marginRight:'80px'}}>
                     <button
                         className={styles.hamburgerButton}
                         onClick={() => setMenuOpen(!isMenuOpen)}
@@ -39,16 +39,19 @@ const Header = () => {
                     {/* 데스크탑 메뉴 */}
                     <ul className={styles.desktopMenu}>
                         <li>
-                            <AnchorLink href="#about" className={styles.menuLink}>About me</AnchorLink>
+                            <AnchorLink href="#about" className={styles.menuLink} offset={100}>About me</AnchorLink>
                         </li>
                         <li>
-                            <AnchorLink href="#skill" className={styles.menuLink}>Skills</AnchorLink>
+                            <AnchorLink href="#education" className={styles.menuLink} offset={100}>Education </AnchorLink>
                         </li>
                         <li>
-                            <AnchorLink href="#career" className={styles.menuLink}>Career</AnchorLink>
+                            <AnchorLink href="#skill" className={styles.menuLink}  offset={100}>Skills</AnchorLink>
                         </li>
                         <li>
-                            <AnchorLink href="#project" className={styles.menuLink}>Projects</AnchorLink>
+                            <AnchorLink href="#career" className={styles.menuLink}  offset={100}>Career</AnchorLink>
+                        </li>
+                        <li>
+                            <AnchorLink href="#project" className={styles.menuLink}  offset={100}>Projects</AnchorLink>
                         </li>
                     </ul>
 
@@ -56,6 +59,9 @@ const Header = () => {
                     <ul className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ''}`}>
                         <li>
                             <AnchorLink href="#about" className={styles.menuLink}>About me</AnchorLink>
+                        </li>
+                        <li>
+                            <AnchorLink href="#educiation" className={styles.menuLink}>Education</AnchorLink>
                         </li>
                         <li>
                             <AnchorLink href="#skill" className={styles.menuLink}>Skills</AnchorLink>
