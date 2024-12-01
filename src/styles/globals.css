@@ -22,6 +22,58 @@ body {
 
 
 }
+
+.project_list_img{
+    border:3px solid black;
+    border-radius:10%;
+    overflow: hidden;
+    position:relative;
+    height: 150px;
+    width: 300px;
+
+}
+
+.modalOverlayStyle{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContentStyle  {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1200px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.divider {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 10px 0;
+}
+
+.closeButtonStyle{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
 .education_box{
     justify-content: space-between;
     display: flex;
@@ -55,8 +107,8 @@ body {
 header {
     position: fixed;      /* 스크롤을 따라 헤더 고정 */
     top: 0;               /* 화면 상단에 고정 */
-    left: 0;              /* 화면 왼쪽 끝에 고정 */
-    width: 100%;          /* 전체 화면 너비 */
+    left: 1em;              /* 화면 왼쪽 끝에 고정 */
+    width: 95%;          /* 전체 화면 너비 */
     background-color: white; /* 배경색 */
     z-index: 1000;        /* 다른 요소들보다 위에 위치 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 */
