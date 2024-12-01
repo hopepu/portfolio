@@ -1,4 +1,4 @@
 declare module 'react-anchor-link-smooth-scroll' {
-    const AnchorLink: any;
+    const AnchorLink: React.ComponentType<never>;
     export default AnchorLink;
 }

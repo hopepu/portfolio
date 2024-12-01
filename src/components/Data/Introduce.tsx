@@ -25,7 +25,7 @@ const Introduction = () => {
             </div>
 
 
-            <div style={{textAlign: 'center', marginTop: '6em', cursor: 'cursorStyle'}}
+            <div style={{textAlign: 'center', marginTop: '6em', cursor: cursorStyle}}
                 onMouseEnter={() => setCursorStyle('pointer')}
                 onMouseLeave={() => setCursorStyle('default')}>
                 <a onClick={() => window.open("https://github.com/hopepu")}>

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import HappyTable from "@/components/ProjectLists/HappyTable";
 import HappyTablePage from "@/app/projectLists/happytable/page"; // HappyTable을 모달 안에 띄우기 위해 import
 
 const RestaurantReservation = () => {

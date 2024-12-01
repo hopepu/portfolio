@@ -5,11 +5,11 @@ import Head from "next/head";
 import Header from "@/components/Layout/Header";
 
 // 폰트 설정
-const geistSans = localFont({
-    src: "/fonts/GeistVF.woff",  // public/fonts/ 경로에 있는 파일을 절대 경로로 설정
-    variable: "--font-geist-sans",
-    weight: "100 900",
-});
+// const geistSans = localFont({
+//     src: "/fonts/GeistVF.woff",  // public/fonts/ 경로에 있는 파일을 절대 경로로 설정
+//     variable: "--font-geist-sans",
+//     weight: "100 900",
+// });
 
 const SBAggroB = localFont({
     src:"/fonts/SBAggroB.woff",

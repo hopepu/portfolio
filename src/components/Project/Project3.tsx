@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import {useState} from "react";
-import ProjectIT from "@/components/ProjectLists/ProjectIT";
 import ProjectITPage from "@/app/projectLists/projectIT-ERPsystem/page";
 
 const ITERPsystem = () => {
