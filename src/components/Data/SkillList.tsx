@@ -9,7 +9,7 @@ const SkillList = () => {
                     <Image className="skill_list_main"
                            width={100}
                            height={100}
-                           src="/image/react.png" alt="java"
+                           src="/image/React.png" alt="java"
                            style={{objectFit: "contain", borderRadius: "10%", height: "100%", width: "100%"}}/>
                 </div>
 
@@ -33,7 +33,7 @@ const SkillList = () => {
                     <Image
                         width={100}
                         height={100}
-                        src="/image/oracleDB.jpg" alt="java"
+                        src="/image/oracleDB.png" alt="java"
                         style={{objectFit: "contain", borderRadius: "10%", marginTop: "7px"}}/>
                 </div>
 
@@ -91,7 +91,7 @@ const SkillList = () => {
                     <Image
                         width={100}
                         height={100}
-                        src="/image/intelliJ.png" alt="java"
+                        src="/image/IntelliJ.png" alt="java"
                         style={{
                             objectFit: "contain", borderRadius: "10%"
                         }}/>
