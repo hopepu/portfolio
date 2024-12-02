@@ -2,7 +2,8 @@ import Image from "next/image";
 
 const Photo = () => {
     return(
-        <div style={{border:"3px solid black",
+        <div style={{
+            border:"3px solid black",
             borderRadius:"10%",
             overflow: "hidden",
             position:"relative",

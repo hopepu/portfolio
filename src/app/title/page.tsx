@@ -5,7 +5,7 @@ import Introduction from "@/components/Data/Introduce";
 export default function Title() {
     return (
         <div className="container" style={{justifyContent: "center", display:"flex", border:"50px"}}>
-            <div style={{marginRight:"100px"}}>
+            <div style={{marginRight:"5em"}}>
                 <Introduction/>
             </div>
             <div>

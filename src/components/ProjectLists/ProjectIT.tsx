@@ -9,8 +9,8 @@ const ProjectIT = () => {
             <div>
                 <h1> ProjectIT(ERP System) </h1>
             </div>
-            <div className="container" style={{justifyContent: "space-between", display: "flex", border: "50px"}}>
-                <div>
+            <div className="container" style={{justifyContent: "center", display: "flex"}}>
+                <div style={{marginRight:"5em"}}>
                     <Image
                         width={500}
                         height={500}
