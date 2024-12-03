@@ -10,7 +10,7 @@ const HappyTable = () => {
                 <h1> ProjectIT(ERP System) </h1>
             </div>
             <div className="container" style={{justifyContent: "center", display: "flex"}}>
-                <div style={{marginRight: "5em"}}>
+                <div>
                     <Image
                         width={500}
                         height={500}

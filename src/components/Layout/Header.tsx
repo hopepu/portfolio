@@ -14,8 +14,8 @@ const Header = () => {
                 <div className={styles.logoContainer}>
                     <Link href="/">
                         <Image
-                            width={50}
-                            height={50}
+                            width={40}
+                            height={40}
                             style={{
                                 width: '100%',
                                 height: '100%',
