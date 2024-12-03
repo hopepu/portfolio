@@ -32,7 +32,7 @@ const RestaurantReservation = () => {
                     }}
                 />
             </div>
-            <h2>Happy Table</h2>
+            <h2 style={{textAlign:"center"}}>Happy Table</h2>
             <h3>사용 기술</h3>
             <h4>Spring Framework + CSS + OracleDB</h4>
             <h3>직책 및 맡은 분야</h3>

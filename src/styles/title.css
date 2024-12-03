@@ -1,0 +1,100 @@
+.container {
+    justify-content: center;
+    display: flex;
+    border: 50px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .container {
+    }
+}
+
+.title {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.subtitle {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.web {
+    font-size: 2.5em;
+}
+
+.developer {
+    font-size: 2.1em;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location > div {
+    font-size: 2em;
+}
+
+.social-link {
+    text-align: center;
+    margin-top: 4em;
+}
+
+.contact {
+    margin-top: 3em;
+    text-align: center;
+}
+
+/* 모바일 화면을 위한 스타일 */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5em;
+    }
+
+    .social-link {
+        margin-top: 2em;
+    }
+
+    .subtitle .web {
+        font-size: 2.2em;
+    }
+
+    .subtitle .developer {
+        font-size: 1.8em;
+    }
+
+    .location > div {
+        font-size: 1.8em;
+    }
+
+    .contact div {
+        font-size: 1.5em;
+    }
+}
+
+/* 태블릿과 모바일 사이즈 */
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .subtitle .web {
+        font-size: 2em;
+    }
+
+    .subtitle .developer {
+        font-size: 1.6em;
+    }
+
+    .location > div {
+        font-size: 1.6em;
+    }
+
+    .contact div {
+        font-size: 1.3em;
+    }
+}

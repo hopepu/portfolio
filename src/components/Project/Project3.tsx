@@ -31,7 +31,7 @@ const ITERPsystem = () => {
                         height: "100%"
                     }}/>
             </div>
-            <h2> IT Project ERP System</h2>
+            <h2 style={{textAlign:"center"}}> IT Project ERP System</h2>
             <h3> 사용 기술 </h3>
             <h4> Spring boot, React, Maria DB</h4>
             <h3> 직책 및 맡은 분야</h3>

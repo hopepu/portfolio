@@ -7,14 +7,14 @@ export default function Project() {
     return (
         <div>
             <h1>Project List</h1>
-            <div className="container" style={{justifyContent: "center", display:"flex", border:"50px"}}>
+            <div className="container" style={{justifyContent: "center", display:"flex", border:"50px", gap:"3em"}}>
                 {/*<div>*/}
                 {/*    <Project1/>*/}
                 {/*</div>*/}
                 <div>
                     <Project2/>
                 </div>
-                <div style={{marginLeft:"100px"}}>
+                <div>
                     <Project3/>
                 </div>
             </div>

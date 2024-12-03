@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {useState} from "react";
+import "../../styles/title.css";
 
 
 
@@ -11,23 +12,22 @@ const Introduction = () => {
 
     return (
         <div>
-            <div style={{fontSize: '3em', marginBottom: '0.5em', marginTop: '0.5em', textAlign: 'center'}}>
+            <div className="title">
                 조용재
             </div>
-            <div style={{marginBottom: '1em', textAlign: 'center'}}>
-                <span style={{fontSize: '2.5em'}}>Web </span>
-                <span style={{fontSize: '2.1em'}}>Developer</span>
+            <div className="subtitle">
+                <span className="web">Web </span>
+                <span className="developer">Developer</span>
             </div>
-            <div
-                style={{justifyContent: 'space-between', display: 'flex', alignItems: 'center', marginBottom: '0.5em'}}>
-                <div style={{fontSize: '2em'}}>Based in</div>
-                <div style={{fontSize: '2.5em', textAlign: 'right', marginLeft: '0.5em'}}>Suwon</div>
+            <div className="location">
+                <div>Based in</div>
+                <div>Suwon</div>
             </div>
 
-
-            <div style={{textAlign: 'center', marginTop: '6em', cursor: cursorStyle}}
-                onMouseEnter={() => setCursorStyle('pointer')}
-                onMouseLeave={() => setCursorStyle('default')}>
+            <div className="social-link"
+                 style={{cursor: cursorStyle}}
+                 onMouseEnter={() => setCursorStyle('pointer')}
+                 onMouseLeave={() => setCursorStyle('default')}>
                 <a onClick={() => window.open("https://github.com/hopepu")}>
                     <Image src="/image/github.png" alt="git"
                            width={50} height={50}
@@ -41,7 +41,7 @@ const Introduction = () => {
                 </div>
             </div>
 
-            <div style={{marginTop: '3em', textAlign: 'center'}}>
+            <div className="contact">
                 <div>010-9290-7654</div>
                 <div>whdydwo2@gmail.com</div>
             </div>

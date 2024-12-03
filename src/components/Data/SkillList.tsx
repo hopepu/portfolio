@@ -34,7 +34,7 @@ const SkillList = () => {
                         width={100}
                         height={100}
                         src="/image/oracleDB.png" alt="java"
-                        style={{objectFit: "contain", borderRadius: "10%", height:"80%", marginTop: "0px"}}/>
+                        style={{objectFit: "contain", borderRadius: "10%", height:"80%", width: "80%"}}/>
                 </div>
 
                 <div className="skill_list_img">
@@ -42,7 +42,7 @@ const SkillList = () => {
                         width={100}
                         height={100}
                         src="/image/mariaDB.png" alt="java"
-                        style={{objectFit: "contain", borderRadius: "10%"}}/>
+                        style={{objectFit: "contain", borderRadius: "10%", height:"80%", width: "80%"}}/>
                 </div>
 
             </div>
@@ -78,14 +78,14 @@ const SkillList = () => {
                         width={100}
                         height={100}
                         src="/image/jpa.png" alt="java"
-                        style={{objectFit: "contain", borderRadius: "10%"}}/>
+                        style={{objectFit: "contain", borderRadius: "10%", height:"80%", width: "80%"}}/>
                 </div>
                 <div className="skill_list_img">
                     <Image
                         width={100}
                         height={100}
                         src="/image/eclipse.png" alt="java"
-                        style={{objectFit: "contain", borderRadius: "10%"}}/>
+                        style={{objectFit: "contain", borderRadius: "10%", height:"80%", width: "80%"}}/>
                 </div>
                 <div className="skill_list_img">
                     <Image
@@ -93,7 +93,7 @@ const SkillList = () => {
                         height={100}
                         src="/image/IntelliJ.png" alt="java"
                         style={{
-                            objectFit: "contain", borderRadius: "10%"
+                            objectFit: "contain", borderRadius: "10%", height:"80%", width: "80%"
                         }}/>
                 </div>
                 <div className="skill_list_img">
@@ -101,7 +101,7 @@ const SkillList = () => {
                         width={100}
                         height={100}
                         src="/image/github2.png" alt="java"
-                        style={{objectFit: "contain", borderRadius: "10%"}}/>
+                        style={{objectFit: "contain", borderRadius: "10%", height:"80%", width: "80%"}}/>
                 </div>
 
             </div>

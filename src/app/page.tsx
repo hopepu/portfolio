@@ -4,27 +4,28 @@ import Project from "@/app/project/page";
 import Skill from "@/app/skill/page";
 import Title from "@/app/title/page";
 import Education from "@/app/education/page";
+import "../styles/globals.css";
 
 
 export default function Home() {
     return (
         <div>
-            <div id="title" style={{marginBottom:'6em'}}>
+            <div id="title" className="HomeList">
                 <Title/>
             </div>
-            <div id="about" style={{marginBottom:'6em'}}>
+            <div id="about" className="HomeList">
                 <About/>
             </div>
-            <div id="education" style={{marginBottom:'6em'}}>
+            <div id="education" className="HomeList">
                 <Education/>
             </div>
-            <div id="skill" style={{marginBottom:'6em'}}>
+            <div id="skill" className="HomeList">
                 <Skill/>
             </div>
-            <div id="career" style={{marginBottom:'6em'}}>
+            <div id="career" className="HomeList">
                 <Career/>
             </div>
-            <div id="project" style={{marginBottom:'6em'}}>
+            <div id="project" className="HomeList">
                 <Project/>
             </div>
         </div>

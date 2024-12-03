@@ -54,19 +54,19 @@ const Header = () => {
 
                     {/* 모바일 메뉴 */}
                     <ul className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ''}`}>
-                        <li>
+                        <li style={{textAlign: "right"}}>
                             <AnchorLink href="#about" className={styles.menuLink} offset="200px">About me</AnchorLink>
                         </li>
-                        <li>
+                        <li style={{textAlign: "right"}}>
                             <AnchorLink href="#skill" className={styles.menuLink} offset="200px">Skills</AnchorLink>
                         </li>
-                        <li>
+                        <li style={{textAlign: "right"}}>
                             <AnchorLink href="#career" className={styles.menuLink} offset="200px">Career</AnchorLink>
                         </li>
-                        <li>
+                        <li style={{textAlign: "right"}}>
                             <AnchorLink href="#project" className={styles.menuLink} offset="200px">Projects</AnchorLink>
                         </li>
-                        <li onClick={() => setMenuOpen(false)} className={styles.menuLink}>
+                        <li style={{textAlign: "right"}} onClick={() => setMenuOpen(false)} className={styles.menuLink}>
                             Close
                         </li>
                     </ul>
